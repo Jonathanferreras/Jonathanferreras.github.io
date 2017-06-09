@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JF | Portfolio</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+			<div class="container">
+				<div id="logo">
+					<img src="img/jf-trans.png">
+				</div>
+				<nav>
+					<ul>
+						<li><a href="https://github.com/Jonathanferreras" target="_blank">MY GITHUB &nbsp;<i class="fa fa-github" aria-hidden="true"></i></a></li>
+						<li><a href="#foot-title">CONTACT <i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="container">
+				<div class="hero">
+					<h1>WELCOME TO MY<br>PORTFOLIO</h1>
+				</div>
+			</div>
+			<div class="container">
+				<a href="#about-me" class="btn btn-lg">SEE MORE</a>
+
+			</div>
+	</header>
+	<section id="about-me" class="bio">
+		<center>
+			<div class="self-pic">
+				<a ><img src="img/430.jpg"></a>
+			</div>
+			<div class="pic-des">
+				<h2>Jonathan Ferreras</h2>
+				<h4>New York City College of Technology Graduate</h4>
+				<h4>Bachelors in Computer Engineering</h4>
+				<h4> Technology</h4>
+			</div>
+				<br>
+			<h3>About Me</h3>
+		</center>
+		<p class="bio-des"> My background stems from the New York City College of Technology where I attained a bachelors degree in Computer Engineering Technology. There, I gained experience in programming embedded systems as well as software applications in various languages. My interest has since grown in the current software technologies and best practices that are used to develop software applications. By developing my skills through personal web and mobile software i have become even more passionate about a future in software development where i can collaborate with others to develop innovatiove applications. 
+		</p>
+	</section>
+	<section class="skills">
+		<div class="row">
+			<div class="col-md-4">
+				<i class="fa fa-terminal" aria-hidden="true"></i>
+					<h4>Skills</h4>
+						<p>
+							ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
+						</p>
+			</div>
+			<div class="col-md-4">
+				<i class="fa fa-desktop" aria-hidden="true"></i>
+					<h4>Web Development</h4>
+						<p>
+							ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
+						</p>
+			</div>
+			<div class="col-md-4">
+				<i class="fa fa-mobile" aria-hidden="true"></i>
+					<h4>Mobile Development</h4>
+						<p>
+							ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
+						</p>
+			</div>	
+		</div>
+	</section>
+	<section class="projects">
+		<h3 id="projects">Projects</h3>
+			<div class="row2">
+				<div class="col-md-6">
+					<div class="showcase">
+						<img src="img/web-design.jpg">
+							<a href="#" id="web-app-link">
+								<h2>Web Apps</h2>
+							</a>
+					</div>
+				</div>
+				<div class="col-md-6" text-center>
+					<div class="showcase">
+						<img src="img/mobile3.jpg">
+							<a href="#" id="mobile-app-link">
+								<h2>Mobile Apps</h2>
+							</a>
+					</div>
+				</div>	
+			</div>
+	</section>
+	<footer>
+		<div>
+			<h3 id="foot-title">Contact Me</h3>
+			<p>
+				ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.
+			</p>
+			<form>
+				<div id="name-form" class="form-group">
+					<label>Name</label>
+					<input type="text" class="form-control">
+				</div>
+				<div id="email-form" class="form-group">
+					<label>Email</label>
+					<input type="text" class="form-control">
+				</div>
+				<div id="msg-form" class="form-group">
+				    <label for="exampleTextarea">Message</label>
+				    <textarea class="form-control" id="exampleTextarea" rows="8"></textarea>
+			  </div>
+			  <button type="button" id="submit-btn">Submit</button>
+			</form>
+
+		</div>	
+
+	</footer>
+	<script src="http://code.jquery.com/jquery-1.12.4.js"
+  		integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  		crossorigin="anonymous"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script>
+		$(function() {
+		  $('a[href*="#"]:not([href="#"])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html, body').animate({
+		          scrollTop: target.offset().top
+		        }, 1500);
+		        return false;
+		      }
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>
