@@ -284,6 +284,10 @@ footer {
   .fa-angle-double-down {
     font-size: 2em;
   }
+  .skills {
+    background: none;
+    background-color: #566573;
+  }
   .tech-logo img{
     max-height: 100%;
     max-width: 100%;
