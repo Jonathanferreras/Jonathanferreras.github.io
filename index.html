@@ -1,156 +1,291 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>JF | Portfolio</title>
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-	<header>
-			<div class="container">
-				<div id="logo">
-					<img src="img/jf-trans.png">
-				</div>
-				<nav>
-					<ul>
-						<li><a href="https://github.com/Jonathanferreras" target="_blank">MY GITHUB &nbsp;<i class="fa fa-github" aria-hidden="true"></i></a></li>
-						<li><a href="#foot-title">CONTACT <i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="container">
-				<div class="hero">
-					<h1>WELCOME TO MY<br>PORTFOLIO</h1>
-				</div>
-			</div>
-			<div class="container">
-				<a href="#about-me" class="btn btn-lg">SEE MORE</a>
-			</div>
-	</header>
+  <head>
+    <title>JF | Portfolio</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <ul class="nav">
+          <li class="left">
+            <img class="logo" src="img/logo.png" alt="404 :(">
+           </li>
+          <li class="right">
+            <a class="github-link" href="https://github.com/Jonathanferreras" target="blank">
+              Github <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+          &nbsp;
+          &nbsp;
+          <li class="right">
+            <a class="contact" href="#" data-toggle="modal" data-target="#ContactModal">
+              Contact <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+          </li>
+          <div class="modal fade" id="ContactModal" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Contact Me</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <p>You can reach me at my email:<br>
+                     <span class="emailLink">
+                       jonathanferreras@icloud.com
+                     </span>
+                     &nbsp;&nbsp;
+                     <button class="btn btn-sm btn-outline-success copyEmailBtn"
+                             type="button"
+                             data-toggle="tooltip"
+                             title="Copy"
+                             data-content="copied"
+                             data-animation="false">
+                       <i class="fa fa-clipboard" aria-hidden="true"></i>
+                     </button>
+                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+        <div class="heading">
+          <div class="heading-content">
+            <h1 class="title color">Creativity.</h1>
+            <h1 class="title">Persistance.</h1>
+            <h2 class="sub-title">An aspiring developer</h2>
+            <div class="bounce">
+              <a href="#intro">
+                <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-	<section id="about-me" class="bio">
-		<center>
-			<div class="self-pic">
-				<a ><img src="img/430.jpg"></a>
-			</div>
-			<div class="pic-des">
-				<h2>Jonathan Ferreras</h2>
-				<h4>New York City College of Technology Graduate</h4>
-				<h4>Bachelors in Computer Engineering</h4>
-				<h4> Technology</h4>
-			</div>
-				<br>
-			<h3>About Poop Me</h3>
-		</center>
-		<p class="bio-des"> My background stems from the New York City College of Technology where I attained a bachelors degree in Computer Engineering Technology. There, I gained experience in programming embedded systems as well as software applications in various languages. My interest has since grown in the current software technologies and best practices that are used to develop software applications. By developing my skills through personal web and mobile software i have become even more passionate about a future in software development where i can collaborate with others to develop innovatiove applications.
-		</p>
-	</section>
+    <section id="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col self-img">
+            <img src="img/user.png" alt="">
+          </div>
+          <div class="col self-info">
+            <h2>Jonathan Ferreras</h2>
+            <h5>New York City College of Technology Graduate</h5>
+            <h5>Bachelors in Computer Engineering</h5>
+            <h5>technology</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col self-desc">
+            <h4 style="color: black;text-align: center;">About Me</h4>
+            <p style="color: black;
+                      text-align: justify;
+                      font-size: 1em;
+                      padding: 2em;">
+               I am pursuing a career in software development
+               for I have a passion for innovative and exciting
+               technology. My background stems from the
+               New York City College of Technology where I
+               attained a bachelors degree in Computer Engineering
+               Technology. During my time there, I have developed
+               my passion in software development. Currently I
+               have been familiarizing myself with full stack
+               development and software engineering practices.
+               By developing my skills through personal projects
+               I have become even more passionate about a
+               future in software development where I can learn and
+               collaborate with others to develop innovatiove
+               applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<section class="skills">
-		<div class="row">
-			<div class="col-md-4">
-				<i class="fa fa-terminal" aria-hidden="true"></i>
-					<h4>Skills</h4>
-						<p>
-							ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat.
-						</p>
-			</div>
-			<div class="col-md-4">
-				<i class="fa fa-desktop" aria-hidden="true"></i>
-					<h4>Web Development</h4>
-						<p>
-							ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat.
-						</p>
-			</div>
-			<div class="col-md-4">
-				<i class="fa fa-mobile" aria-hidden="true"></i>
-					<h4>Mobile Development</h4>
-						<p>
-							ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat.
-						</p>
-			</div>
-		</div>
-	</section>
+    <section class="skills">
+      <div class="container">
+        <div class="skills-content">
+          <div class="row">
+            <div class="col-md-4">
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
+              <h4 class="skill-title">Personal Charateristics</h4>
+              <p>
+                <strong style="color: #82E0AA;">Problem solver: </strong>
+                One of my strongest
+                strengths. This is because I am persistant when
+                tackling problems. My methodology is to conduct as
+                much research as possible and apply all of my knowledge
+                until I am mentally fatigued. Then I rinse and repeat
+                after I have collected myself.
+                <br>
+                <strong style="color: #82E0AA;">Analytical: </strong>Attention to detail has
+                always been a big part of my life. Ironically for me, it
+                has proven to be a very important trait to have for
+                software development.
+                <br>
+                <strong style="color: #82E0AA;">Team player: </strong>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <i class="fa fa-code" aria-hidden="true"></i>
+              <h4 class="skill-title">CS Fundamentals</h4>
+              <p>
+                <strong style="color: #82E0AA;">CS concepts: </strong>
+                Strong grasp of basic programming, general object oriented
+                concepts, complexity analysis, operating systems, computer
+                architecture, and discrete mathematics.
+                <br>
+                <strong style="color: #82E0AA;">Data structures: </strong>
+                I have a firm understanding of common data structures such as
+                arrays, lists, and hashes. Currently I am working on learning
+                more complex data structures such as trees and graphs.
+                <br>
+                <strong style="color: #82E0AA;">Algorithms: </strong>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <i class="fa fa-desktop" aria-hidden="true"></i>
+              <h4 class="skill-title">Web Development</h4>
+              <p>
+                <strong style="color: #82E0AA;">Front-end: </strong>
+                The UI should to be visually appealing
+                and work seemlessly that the user should not need prior
+                knowledge on how to operate the UI. This are the expectations
+                that I strive for when building web applications.
+                <br>
+                <strong style="color: #82E0AA;">Back-end: </strong>
+                While this is a area fairly new to me, I am quickly enjoying
+                my experience developing back-end. It allows for adding
+                powerful features to a application such as handling large
+                amounts of data and user authentication.
+                <br>
+                <strong style="color: #82E0AA;">Full-stack: </strong>
+                Knowing how the front-end and back-end of applications are
+                developed is important because you gain a deeper understanding
+                about the application. I hope to use this understanding
+                so I can contribute and communicate fluently with teams that
+                work on different areas of a project.
+              </p>
+            </div>
+          </div>
+        </div>
 
-	<section class="projects">
-		<h3 id="projects">Projects</h3>
-			<div class="row2">
-				<div class="col-md-6">
-					<div class="showcase">
-						<img src="img/web-design.jpg">
-							<a href="#" id="web-app-link">
-								<h2>Web Apps</h2>
-							</a>
-					</div>
-				</div>
-				<div class="col-md-6" text-center>
-					<div class="showcase">
-						<img src="img/mobile3.jpg">
-							<a href="#" id="mobile-app-link">
-								<h2>Mobile Apps</h2>
-							</a>
-					</div>
-				</div>
-			</div>
-	</section>
+        <div class="skills-content">
+          <h3 class="skill-title">Most experience with</h3>
+          <div class="row">
+            <div class="col">
+              <div class="tech-logo ">
+                <img data-toggle="tooltip"
+                     title="React.js"
+                     data-animation="false"
+                     src="img/react-logo.png" alt="">
+              </div>
+              <div class="tech-logo ">
+                <img data-toggle="tooltip"
+                     title="Javascript"
+                     data-animation="false"
+                     src="img/JS6_Logo.png" alt="">
+              </div>
+              <div class="tech-logo ">
+                <img data-toggle="tooltip"
+                     title="jQuery"
+                     data-animation="false"
+                     src="img/jquery-logo.png" alt="">
+              </div>
+            </div>
+            <div class="col">
+              <div class="tech-logo">
+                <img data-toggle="tooltip"
+                     title="HTML"
+                     data-animation="false"
+                     src="img/HTML5-logo.png" alt="">
+              </div>
+              <div class="tech-logo">
+                <img data-toggle="tooltip"
+                     title="CSS"
+                     data-animation="false"
+                     src="img/CSS-logo.png" alt="">
+              </div>
+              <div class="tech-logo">
+                <img data-toggle="tooltip"
+                     title="Bootstrap"
+                     data-animation="false"
+                     src="img/bootstrap-logo2.png" alt="">
+              </div>
+            </div>
+            <div class="col">
+              <div class="tech-logo ">
+                <img data-toggle="tooltip"
+                     title="Python"
+                     data-animation="false"
+                     src="img/python-logo.png" alt="">
+              </div>
+              <div class="tech-logo ">
+                <img data-toggle="tooltip"
+                     title="Flask"
+                     data-animation="false"
+                     src="img/flask-logo2.png" alt="">
+              </div>
+              <div class="tech-logo ">
+                <img data-toggle="tooltip"
+                     title="Ubuntu"
+                     data-animation="false"
+                     src="img/ubuntu-logo.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<footer>
-		<div>
-			<h3 id="foot-title">Contact Me</h3>
-			<p>
-				ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.
-			</p>
-			<form>
-				<div id="name-form" class="form-group">
-					<label>Name</label>
-					<input type="text" class="form-control">
-				</div>
-				<div id="email-form" class="form-group">
-					<label>Email</label>
-					<input type="text" class="form-control">
-				</div>
-				<div id="msg-form" class="form-group">
-				    <label for="exampleTextarea">Message</label>
-				    <textarea class="form-control" id="exampleTextarea" rows="8"></textarea>
-			  </div>
-			  <button type="button" id="submit-btn">Submit</button>
-			</form>
-		</div>
-	</footer>
+    <section class="projects">
+      <div class="container">
+        <div class="projects-showcase">
+          <h4>Projects</h4>
+          <div class="row">
+            <div class="col-4">
+              <h5>Project1</h5>
+            </div>
+            <div class="col-4">
+              <h5>Project2</h5>
+            </div>
+            <div class="col-4">
+              <h5>Project3</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="bootstrap/js/bootstrap.js"></script>
-
-	<script>
-		$(function() {
-		  $('a[href*="#"]:not([href="#"])').click(function() {
-		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-		      var target = $(this.hash);
-		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		      if (target.length) {
-		        $('html, body').animate({
-		          scrollTop: target.offset().top
-		        }, 1500);
-		        return false;
-		      }
-		    }
-		  });
-		});
-	</script>
-</body>
+    <footer>
+      <div class="container">
+        <div class="">
+          <h3>This site was built with:</h3>
+          <h3>Cool animation here</h3>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+            crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>
