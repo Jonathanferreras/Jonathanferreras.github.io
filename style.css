@@ -205,8 +205,11 @@ header {
               fixed
               no-repeat 50% 50%;
   background-position: center;
+  -webkit-background-position: center;
   background-size: cover;
+  -webkit-background-size: cover;
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
 }
 .skill-title {
   text-align: center;
