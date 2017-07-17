@@ -251,6 +251,9 @@ footer {
 }
 /* Small screens */
 @media all and (max-width: 500px) {
+  header {
+    background-attachment: scroll;
+  }
   .nav {
     flex-direction: column;
   }
