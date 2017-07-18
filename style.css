@@ -1,10 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  color: white;
+  /*color: white;*/
   font-family: 'Josefin Sans', sans-serif;
 }
 header {
+  color: white;
   height: 100vh;
   background: linear-gradient(
                 rgba(0,0,0,0.8),
@@ -169,9 +170,10 @@ header {
 }
 .fa-angle-double-down {
   font-size: 3em;
+  color: white !important;
 }
 .fa-angle-double-down:hover {
-  color: #82E0AA;
+  color: #82E0AA !important;
 }
 #intro {
   height: auto;
@@ -192,9 +194,9 @@ header {
 .self-info {
   height: auto;
   padding: 3em;
-  color: black;
   text-align: center;
 }
+.self-desc {}
 .skills {
   height: auto;
   background: linear-gradient(
@@ -226,6 +228,7 @@ header {
   padding: 2em;
   background: rgba(0,0,0,0.3);
   text-align: center;
+  color: white;
 }
 .tech-logo img{
   max-height: 25%;
@@ -236,9 +239,15 @@ header {
   height: auto;
   background: #82E0AA;
 }
-.projects h2, .projects h4 {
-  color: black;
+.project-content {
+  overflow: auto;
+}
+.project-content h2, .project-content h4 {
   text-align: center;
+}
+.project-content p {
+  text-align: justify;
+  padding-bottom: 1em;
 }
 .carousel .carousel-inner img {
   width: 100%;
@@ -247,8 +256,10 @@ header {
   overflow: hidden;
 }
 footer {
-  height: 25vh;
+  height: auto;
   background-color: #25292C;
+  color: white;
+  margin-top: none;
 }
 
 /*Large screens */
