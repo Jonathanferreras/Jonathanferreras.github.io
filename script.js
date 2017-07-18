@@ -1,6 +1,9 @@
+// Enable email link to be copied to clipboard
 var copyEmailBtn = document.querySelector('.copyEmailBtn');
+
 copyEmailBtn.addEventListener('click',
 function(event){
+  
   var emailLink = document.querySelector('.emailLink');
   var range = document.createRange();
   range.selectNode(emailLink);
@@ -8,8 +11,6 @@ function(event){
   window.getSelection().addRange(range);
   try {
     var successful = document.execCommand('copy');
-    var msg = successful ? 'successful' : 'unsuccessful';
-    console.log('Copy email command was ' + msg);
   }
   catch(err) {
     console.log('Oops, unable to copy');
@@ -24,8 +25,7 @@ $(function () {
   $('.carousel').carousel()
 })
 
-
-
+// Smooth scrolling for down arrow icon
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

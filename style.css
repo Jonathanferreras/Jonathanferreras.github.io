@@ -187,16 +187,30 @@ header {
 .row {
   height: auto;
 }
+.self-img {
+  display: flex;
+  justify-content: center;
+}
 .self-img img {
   padding: 1em;
-  width: 200px;
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
 }
 .self-info {
   height: auto;
   padding: 3em;
   text-align: center;
 }
-.self-desc {}
+.self-desc h4{
+  text-align: center;
+}
+.self-desc p {
+  text-align: justify;
+  font-size: 1em;
+  padding: 2em;
+}
 .skills {
   height: auto;
   background: linear-gradient(
@@ -219,6 +233,9 @@ header {
 .skills p {
   text-align: justify;
   padding-bottom: 1em;
+}
+.skills p strong {
+  color: #82E0AA;
 }
 .fa-user-circle, .fa-code, .fa-desktop {
   font-size: 40px;
@@ -256,10 +273,17 @@ header {
   overflow: hidden;
 }
 footer {
+  padding: 2em;
   height: auto;
   background-color: #25292C;
   color: white;
   margin-top: none;
+  overflow: auto;
+  text-align: center;
+}
+.footer-content {
+  padding: 1em;
+  border: 2px solid;
 }
 
 /*Large screens */

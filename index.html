@@ -47,7 +47,6 @@
                              type="button"
                              data-toggle="tooltip"
                              title="Copy"
-                             data-content="copied"
                              data-animation="false">
                        <i class="fa fa-clipboard" aria-hidden="true"></i>
                      </button>
@@ -74,22 +73,19 @@
 
     <section id="intro">
       <div class="container">
-        <div class="col self-img">
+        <div class="self-img">
           <img src="img/user.png" alt="">
         </div>
-        <div class="col self-info">
+        <div class="self-info">
           <h2>Jonathan Ferreras</h2>
           <h5>New York City College of Technology Graduate</h5>
           <h5>Bachelors in Computer Engineering</h5>
           <h5>Technology</h5>
         </div>
         <div class="row">
-          <div class="col self-desc">
-            <h4 style="color: black;text-align: center;">About Me</h4>
-            <p style="color: black;
-                      text-align: justify;
-                      font-size: 1em;
-                      padding: 2em;">
+          <div class="self-desc">
+            <h4>About Me</h4>
+            <p>
                I am pursuing a career in software development
                for I have a passion for innovative and exciting
                technology. My background stems from the
@@ -118,7 +114,7 @@
               <i class="fa fa-user-circle" aria-hidden="true"></i>
               <h4 class="skill-title">Personal Charateristics</h4>
               <p>
-                <strong style="color: #82E0AA;">Problem solver: </strong>
+                <strong>Problem solver: </strong>
                 One of my strongest
                 strengths. This is because I am persistant when
                 tackling problems. My methodology is to conduct as
@@ -126,48 +122,60 @@
                 until I am mentally fatigued. Then I rinse and repeat
                 after I have collected myself.
                 <br>
-                <strong style="color: #82E0AA;">Analytical: </strong>Attention to detail has
-                always been a big part of my life. Ironically for me, it
-                has proven to be a very important trait to have for
-                software development.
+                <strong>Analytical: </strong>
+                Attention to detail has
+                proven to be a very important trait to have for
+                software development. Catching bugs, noticing unusual
+                behavior, and anticipating problems in order to prevent
+                them are things that can be done with perceptive skills.
                 <br>
-                <strong style="color: #82E0AA;">Team player: </strong>
+                <strong>Team player: </strong>
+                Being able to analyze peoples strengths and weaknesses
+                and coordinating with that information is something I have
+                experience with. Giving others a chance to express their
+                views towards any project that's being worked on is important
+                because it allows for a working environment that is unified.
               </p>
             </div>
             <div class="col-md-4">
               <i class="fa fa-code" aria-hidden="true"></i>
               <h4 class="skill-title">CS Fundamentals</h4>
               <p>
-                <strong style="color: #82E0AA;">CS concepts: </strong>
+                <strong>CS concepts: </strong>
                 Strong grasp of basic programming, general object oriented
                 concepts, complexity analysis, operating systems, computer
                 architecture, and discrete mathematics.
                 <br>
-                <strong style="color: #82E0AA;">Data structures: </strong>
+                <strong>Data structures: </strong>
                 I have a firm understanding of common data structures such as
                 arrays, lists, and hashes. Currently I am working on learning
                 more complex data structures such as trees and graphs.
                 <br>
-                <strong style="color: #82E0AA;">Algorithms: </strong>
+                <strong>Algorithms: </strong>
+                Taking a difficult problem and breaking it down into
+                smaller less difficult problems is what leads to success
+                in software development. I have experience developing algorithms
+                to do as such. Also knowing when not to re-invent the wheel and study
+                proven algorithms that solve an exisiting problem is important as well.
               </p>
             </div>
             <div class="col-md-4">
               <i class="fa fa-desktop" aria-hidden="true"></i>
               <h4 class="skill-title">Web Development</h4>
               <p>
-                <strong style="color: #82E0AA;">Front-end: </strong>
+                <strong>Front-end: </strong>
                 The UI should be visually appealing and work so seemlessly
                 that the user should not need prior knowledge on how to
                 operate the UI. This is the expectation that I strive
                 for when building web applications.
                 <br>
-                <strong style="color: #82E0AA;">Back-end: </strong>
+                <strong>Back-end: </strong>
                 While this is a area fairly new to me, I am quickly enjoying
                 my experience developing back-end. It allows for adding
                 powerful features to a application such as handling large
                 amounts of data and user authentication.
                 <br>
-                <strong style="color: #82E0AA;">Full-stack: </strong>
+                <strong>Full-stack: </strong>
                 Knowing how the front-end and back-end of applications are
                 developed is important because you gain a deeper understanding
                 about the application. I hope to use this understanding
@@ -270,7 +278,9 @@
           <p>
             This is a gaming platform that I am currently working on.
             Im trying to recreate old school games such as pong,
-            the snake game, galaxy wars and more. The app is being built
+            the snake game, galaxy wars and more. The goal is
+            to have a collection of games that you choose and the
+            the app will load the game. The app is being built
             with HTML, CSS, Javascript, and React.js. Check out the
             project repo <a href="https://github.com/Jonathanferreras/retro-fun" target="blank">
               here</a>&nbsp;<i class="fa fa-github-alt" aria-hidden="true"></i>.
@@ -292,7 +302,7 @@
           </div>
           <br>
           <p>
-            This was a project to replicate the functionality of
+            This was a project that replicated the functionality of
             Youtube on a small scale. The app utlizes YouTube search API
             to search and view videos from YouTube. I used HTML, CSS,
             Javascript, and React.js to create this app. Check out the
@@ -316,8 +326,8 @@
           </div>
           <br>
           <p>
-            This was a application I built to take a csv file
-            and display it in a visually appealing manner.
+            This was a application I built that takes a csv file
+            and displays it in a visually appealing manner.
             I used HTML, CSS, Javascript for front-end and
             python along with flask for back-end. Check out the
             project repo <a href="https://github.com/Jonathanferreras/react_youtube_clone" target="blank">
@@ -328,9 +338,27 @@
     </section>
     <footer>
       <div class="container">
-        <div class="">
-          <h3>This site was built with:</h3>
-          <h3>Cool animation here</h3>
+        <div class="footer-content">
+          <h3>This site was built by Jonathan Ferreras</h3>
+          <h4>using <span style="color: black;
+                                 background-color: orange;
+                                 border-radius: 10px;
+                                 padding: 0.1em;">HTML</span> ,
+                    <span style="color: white;
+                                 background-color: #21618C;
+                                 border-radius: 10px;
+                                 padding: 0.1em;">CSS</span> ,
+                    <span style="color: black;
+                                 background-color: #F4D03F;
+                                 border-radius: 10px;
+                                 padding: 0.1em;">Javascript</span>
+                                 , and
+                    <span style="color: black;
+                                 background-color: #5DADE2;
+                                 border-radius: 10px;
+                                 padding: 0.1em;">jQuery</span> .</h4>
+          <br>
+          <h5>- hosted on github <i class="fa fa-github" aria-hidden="true"></i> -</h5>
         </div>
       </div>
     </footer>
