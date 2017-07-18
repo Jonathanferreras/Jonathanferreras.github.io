@@ -250,6 +250,7 @@ footer {
   height: 25vh;
   background-color: #25292C;
 }
+
 /*Large screens */
 @media all and (max-width: 900px) {
   .tech-logo img{
@@ -296,6 +297,9 @@ footer {
   .tech-logo img{
     max-height: 100%;
     max-width: 100%;
+  }
+  .carousel .carousel-inner img {
+    height: 20em;
   }
 }
 /*for debugging*/
