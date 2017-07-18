@@ -18,10 +18,13 @@ function(event){
   window.getSelection().removeAllRanges();
 })
 
-
+// Bootstrap enable funcs
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
+  $('.carousel').carousel()
 })
+
+
 
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
